@@ -155,12 +155,12 @@
                                 <exclude reference="95f-hV-aqo"/>
                                 <exclude reference="PEn-Ob-i1r"/>
                                 <exclude reference="PPh-Kp-9Zv"/>
-                                <exclude reference="QOi-RS-CfP"/>
                                 <exclude reference="7wM-KR-uXx"/>
                                 <exclude reference="c6v-wq-6vo"/>
                                 <exclude reference="eYq-lJ-liX"/>
                                 <exclude reference="ixE-7W-q9P"/>
                                 <exclude reference="92H-rt-e52"/>
+                                <exclude reference="QOi-RS-CfP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -184,9 +184,6 @@
                                 <include reference="PPh-Kp-9Zv"/>
                                 <exclude reference="lbN-kA-jU0"/>
                                 <exclude reference="qyn-zb-Qmh"/>
-                                <exclude reference="Hc8-ml-njR"/>
-                                <exclude reference="Icr-s2-80v"/>
-                                <include reference="QOi-RS-CfP"/>
                                 <exclude reference="Dlv-0W-QSR"/>
                                 <exclude reference="OzK-Em-w7y"/>
                                 <exclude reference="1vR-hf-MfV"/>
@@ -196,6 +193,9 @@
                                 <include reference="eYq-lJ-liX"/>
                                 <include reference="ixE-7W-q9P"/>
                                 <include reference="92H-rt-e52"/>
+                                <exclude reference="Hc8-ml-njR"/>
+                                <exclude reference="Icr-s2-80v"/>
+                                <include reference="QOi-RS-CfP"/>
                             </mask>
                         </variation>
                     </view>
@@ -220,7 +220,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUk-Sr-FEy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUk-Sr-FEy">
                                 <rect key="frame" x="13" y="143" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="hFA-l3-Qbg"/>
@@ -236,13 +236,13 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCR-eF-zma">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCR-eF-zma">
                                 <rect key="frame" x="13" y="297" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iel-dr-9FG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iel-dr-9FG">
                                 <rect key="frame" x="13" y="452" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUW-uF-dGo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUW-uF-dGo">
                                 <rect key="frame" x="304" y="175" width="276" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="70e-Bq-7mI"/>
@@ -264,7 +264,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvJ-jX-p5c">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvJ-jX-p5c">
                                 <rect key="frame" x="304" y="329" width="276" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Hzf-S5-Wyl"/>
@@ -283,7 +283,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beP-n1-gWj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beP-n1-gWj">
                                 <rect key="frame" x="304" y="478" width="276" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="cVB-rC-GcL"/>
@@ -302,7 +302,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RELP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X7-5o-edd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="RELP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X7-5o-edd">
                                 <rect key="frame" x="167" y="28" width="253" height="96"/>
                                 <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="60"/>
                                 <color key="textColor" red="0.76683147835144982" green="0.24454630616579642" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -347,12 +347,12 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="ZnN-t7-LkA"/>
-                                <exclude reference="buw-oA-UAd"/>
-                                <exclude reference="zHs-l7-F1W"/>
                                 <exclude reference="BVQ-S9-hFS"/>
                                 <exclude reference="j5t-vV-5Ov"/>
                                 <exclude reference="vka-kl-Z2D"/>
+                                <exclude reference="ZnN-t7-LkA"/>
+                                <exclude reference="buw-oA-UAd"/>
+                                <exclude reference="zHs-l7-F1W"/>
                                 <exclude reference="Khe-vy-8At"/>
                                 <exclude reference="Xto-GV-flQ"/>
                                 <exclude reference="e5L-LK-XAU"/>
@@ -374,12 +374,12 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="ZnN-t7-LkA"/>
-                                <include reference="buw-oA-UAd"/>
-                                <include reference="zHs-l7-F1W"/>
                                 <include reference="BVQ-S9-hFS"/>
                                 <include reference="j5t-vV-5Ov"/>
                                 <include reference="vka-kl-Z2D"/>
+                                <include reference="ZnN-t7-LkA"/>
+                                <include reference="buw-oA-UAd"/>
+                                <include reference="zHs-l7-F1W"/>
                                 <include reference="Khe-vy-8At"/>
                                 <include reference="Xto-GV-flQ"/>
                                 <include reference="e5L-LK-XAU"/>
