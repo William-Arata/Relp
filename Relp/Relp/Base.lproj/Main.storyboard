@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgJ-bn-fYl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="RELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgJ-bn-fYl">
                                 <rect key="frame" x="266" y="28" width="68" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="6Hb-Jy-qtp"/>
@@ -40,13 +41,13 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTv-6j-5OQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTv-6j-5OQ">
                                 <rect key="frame" x="62" y="237" width="112" height="45"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.98326587780153907" blue="0.0076631421444958159" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-Ui-Uxh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-Ui-Uxh">
                                 <rect key="frame" x="62" y="363" width="101" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.94780315988472907" blue="0.025740015307568531" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,7 +76,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTr-5p-9MY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTr-5p-9MY">
                                 <rect key="frame" x="266" y="367" width="215" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -99,7 +100,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5p-hV-aQY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5p-hV-aQY">
                                 <rect key="frame" x="266" y="252" width="215" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -134,11 +135,15 @@
                                 <exclude reference="ir2-7c-Ht0"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1Jn-09-zqc"/>
-                                <exclude reference="Q31-uo-AEM"/>
+                                <exclude reference="AuZ-fk-JRI"/>
+                                <exclude reference="gI8-x7-4dI"/>
+                                <exclude reference="E8f-ps-GgY"/>
+                                <exclude reference="gQn-Ai-ztT"/>
                                 <exclude reference="2Vk-Yl-Zfl"/>
                                 <exclude reference="EnN-ad-mjY"/>
                                 <exclude reference="dWk-cY-ZP1"/>
+                                <exclude reference="1Jn-09-zqc"/>
+                                <exclude reference="Q31-uo-AEM"/>
                                 <exclude reference="8aB-Rg-s2S"/>
                                 <exclude reference="cHN-Wr-kY5"/>
                                 <exclude reference="heU-xV-mX5"/>
@@ -147,10 +152,6 @@
                                 <exclude reference="1Do-hI-LiG"/>
                                 <exclude reference="Ecy-Xg-SFm"/>
                                 <exclude reference="ikm-4d-fBU"/>
-                                <exclude reference="E8f-ps-GgY"/>
-                                <exclude reference="gQn-Ai-ztT"/>
-                                <exclude reference="AuZ-fk-JRI"/>
-                                <exclude reference="gI8-x7-4dI"/>
                                 <exclude reference="OiK-cw-Pu7"/>
                                 <exclude reference="yqX-01-diK"/>
                             </mask>
@@ -161,11 +162,15 @@
                                 <include reference="ir2-7c-Ht0"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="1Jn-09-zqc"/>
-                                <include reference="Q31-uo-AEM"/>
+                                <include reference="AuZ-fk-JRI"/>
+                                <include reference="gI8-x7-4dI"/>
+                                <include reference="E8f-ps-GgY"/>
+                                <include reference="gQn-Ai-ztT"/>
                                 <include reference="2Vk-Yl-Zfl"/>
                                 <include reference="EnN-ad-mjY"/>
                                 <include reference="dWk-cY-ZP1"/>
+                                <include reference="1Jn-09-zqc"/>
+                                <include reference="Q31-uo-AEM"/>
                                 <include reference="8aB-Rg-s2S"/>
                                 <include reference="cHN-Wr-kY5"/>
                                 <include reference="heU-xV-mX5"/>
@@ -174,10 +179,6 @@
                                 <include reference="1Do-hI-LiG"/>
                                 <include reference="Ecy-Xg-SFm"/>
                                 <include reference="ikm-4d-fBU"/>
-                                <include reference="E8f-ps-GgY"/>
-                                <include reference="gQn-Ai-ztT"/>
-                                <include reference="AuZ-fk-JRI"/>
-                                <include reference="gI8-x7-4dI"/>
                                 <include reference="OiK-cw-Pu7"/>
                                 <include reference="yqX-01-diK"/>
                             </mask>
