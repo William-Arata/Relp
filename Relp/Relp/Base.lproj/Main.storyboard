@@ -220,9 +220,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abh-Tm-2RR">
-                                <rect key="frame" x="121" y="58" width="376" height="194"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPs-Yh-IOW">
                                 <rect key="frame" x="121" y="443" width="82" height="63"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="48"/>
@@ -291,6 +288,9 @@
                                     <rect key="frame" x="41" y="540" width="66" height="27"/>
                                 </variation>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abh-Tm-2RR">
+                                <rect key="frame" x="121" y="58" width="376" height="194"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.1148001251" blue="0.092377194790000006" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
