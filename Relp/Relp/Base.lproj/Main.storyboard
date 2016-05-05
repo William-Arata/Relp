@@ -89,6 +89,15 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39A-bQ-9Wy">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="182" y="472" width="48" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaH-kU-bZ1">
                                 <rect key="frame" x="43" y="539" width="67" height="30"/>
                                 <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="15"/>
@@ -143,6 +152,9 @@
                             <constraint firstItem="abh-Tm-2RR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="ucg-pc-e8T"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="39A-bQ-9Wy"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="7HC-tV-lnO"/>
                                 <exclude reference="hsz-5k-WTC"/>
@@ -164,6 +176,9 @@
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="39A-bQ-9Wy"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="7HC-tV-lnO"/>
                                 <exclude reference="SPI-LU-xNN"/>
