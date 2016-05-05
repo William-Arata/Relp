@@ -99,8 +99,8 @@
 			children = (
 				2C9ED32A1CD7D8BC009428C9 /* AppDelegate.swift */,
 				2C9ED32C1CD7D8BC009428C9 /* ViewController.swift */,
-				2C9ED32E1CD7D8BC009428C9 /* Main.storyboard */,
 				2C9ED3311CD7D8BC009428C9 /* Assets.xcassets */,
+				2C9ED32E1CD7D8BC009428C9 /* Main.storyboard */,
 				2C9ED3331CD7D8BC009428C9 /* LaunchScreen.storyboard */,
 				2C9ED3361CD7D8BC009428C9 /* Info.plist */,
 			);
@@ -484,6 +484,7 @@
 				2C9ED3511CD7D8BC009428C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C9ED3521CD7D8BC009428C9 /* Build configuration list for PBXNativeTarget "RelpTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				2C9ED3541CD7D8BC009428C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C9ED3551CD7D8BC009428C9 /* Build configuration list for PBXNativeTarget "RelpUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				2C9ED3571CD7D8BC009428C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
