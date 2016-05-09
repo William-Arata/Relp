@@ -281,11 +281,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abh-Tm-2RR">
                                 <rect key="frame" x="121" y="58" width="376" height="194"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvv-Zh-v3f">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="4Kz-a0-KrA" kind="show" id="aG4-IH-LWK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.1148001251" blue="0.092377194790000006" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="iL9-3J-Q4G" secondAttribute="trailing" constant="14" id="1vR-hf-MfV"/>
                             <constraint firstItem="Rt3-KZ-u0h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="3Vo-Il-C79"/>
+                            <constraint firstItem="abh-Tm-2RR" firstAttribute="leading" secondItem="Dvv-Zh-v3f" secondAttribute="trailing" id="4uT-Cg-SQ7">
+                                <variation key="widthClass=compact" constant="-40"/>
+                            </constraint>
+                            <constraint firstItem="abh-Tm-2RR" firstAttribute="top" secondItem="Dvv-Zh-v3f" secondAttribute="bottom" constant="10" id="4w8-TW-JtU">
+                                <variation key="widthClass=compact" constant="19"/>
+                            </constraint>
                             <constraint firstItem="znr-Kb-cbx" firstAttribute="trailing" secondItem="RPs-Yh-IOW" secondAttribute="trailing" id="6RU-Mv-xfP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="abh-Tm-2RR" secondAttribute="trailing" constant="-16" id="7HC-tV-lnO">
                                 <variation key="widthClass=compact" constant="0.0"/>
@@ -327,8 +340,11 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="39A-bQ-9Wy"/>
+                                <exclude reference="Dvv-Zh-v3f"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="4uT-Cg-SQ7"/>
+                                <exclude reference="4w8-TW-JtU"/>
                                 <exclude reference="7HC-tV-lnO"/>
                                 <exclude reference="hsz-5k-WTC"/>
                                 <exclude reference="ucg-pc-e8T"/>
@@ -340,19 +356,22 @@
                                 <exclude reference="95f-hV-aqo"/>
                                 <exclude reference="PEn-Ob-i1r"/>
                                 <exclude reference="PPh-Kp-9Zv"/>
+                                <exclude reference="QOi-RS-CfP"/>
                                 <exclude reference="7wM-KR-uXx"/>
                                 <exclude reference="c6v-wq-6vo"/>
                                 <exclude reference="eYq-lJ-liX"/>
                                 <exclude reference="ixE-7W-q9P"/>
                                 <exclude reference="92H-rt-e52"/>
-                                <exclude reference="QOi-RS-CfP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="39A-bQ-9Wy"/>
+                                <include reference="Dvv-Zh-v3f"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="4uT-Cg-SQ7"/>
+                                <include reference="4w8-TW-JtU"/>
                                 <include reference="7HC-tV-lnO"/>
                                 <exclude reference="SPI-LU-xNN"/>
                                 <include reference="hsz-5k-WTC"/>
@@ -372,6 +391,9 @@
                                 <include reference="PPh-Kp-9Zv"/>
                                 <exclude reference="lbN-kA-jU0"/>
                                 <exclude reference="qyn-zb-Qmh"/>
+                                <exclude reference="Hc8-ml-njR"/>
+                                <exclude reference="Icr-s2-80v"/>
+                                <include reference="QOi-RS-CfP"/>
                                 <exclude reference="Dlv-0W-QSR"/>
                                 <exclude reference="OzK-Em-w7y"/>
                                 <exclude reference="1vR-hf-MfV"/>
@@ -381,9 +403,6 @@
                                 <include reference="eYq-lJ-liX"/>
                                 <include reference="ixE-7W-q9P"/>
                                 <include reference="92H-rt-e52"/>
-                                <exclude reference="Hc8-ml-njR"/>
-                                <exclude reference="Icr-s2-80v"/>
-                                <include reference="QOi-RS-CfP"/>
                             </mask>
                         </variation>
                     </view>
