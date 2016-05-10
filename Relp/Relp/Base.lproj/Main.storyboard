@@ -3,18 +3,20 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Screen View Controller-->
         <scene sceneID="4IV-dL-gff">
             <objects>
-                <viewController id="tx4-WU-cwD" sceneMemberID="viewController">
+                <viewController id="tx4-WU-cwD" customClass="LoginScreenViewController" customModule="Relp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NT7-xg-Y73"/>
                         <viewControllerLayoutGuide type="bottom" id="zhO-tP-f96"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8GE-nP-RTC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4b-XV-dbM">
@@ -49,11 +51,17 @@
                                         <include reference="AEh-s6-r4G"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="usernameTextField:" destination="tx4-WU-cwD" eventType="editingChanged" id="bj9-6a-PpC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oPi-6h-DBZ">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordTextField:" destination="tx4-WU-cwD" eventType="editingChanged" id="GCG-NU-gX4"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cma-Ut-AZo">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -73,6 +81,10 @@
                                         <include reference="3Tm-Mc-SMo"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="loginButton:" destination="tx4-WU-cwD" eventType="touchUpInside" id="Sxb-pP-Zu5"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BWS-Tg-pCH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-wm-bQQ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -116,27 +128,27 @@
                                 <exclude reference="zQM-wm-bQQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3hh-m6-uow"/>
-                                <exclude reference="gyG-if-7CA"/>
-                                <exclude reference="wVE-q7-fmf"/>
-                                <exclude reference="KcD-O8-qYz"/>
-                                <exclude reference="WVc-36-Bxk"/>
-                                <exclude reference="8el-hc-msS"/>
-                                <exclude reference="kp1-xP-anc"/>
-                                <exclude reference="zrg-3A-kBd"/>
+                                <exclude reference="9EV-vG-O3F"/>
+                                <exclude reference="kgf-hG-U97"/>
                                 <exclude reference="RHw-dE-ucS"/>
                                 <exclude reference="gPj-i5-hq7"/>
                                 <exclude reference="obq-KM-Tv9"/>
                                 <exclude reference="yHx-mc-LsP"/>
-                                <exclude reference="9fI-Pm-PXy"/>
-                                <exclude reference="DCI-7f-Lgo"/>
                                 <exclude reference="FhD-tq-Nyn"/>
                                 <exclude reference="L66-Ke-YLc"/>
                                 <exclude reference="fRL-Kk-hnq"/>
                                 <exclude reference="gdv-JM-IDU"/>
                                 <exclude reference="Cx4-2g-d2c"/>
-                                <exclude reference="9EV-vG-O3F"/>
-                                <exclude reference="kgf-hG-U97"/>
+                                <exclude reference="8el-hc-msS"/>
+                                <exclude reference="kp1-xP-anc"/>
+                                <exclude reference="zrg-3A-kBd"/>
+                                <exclude reference="KcD-O8-qYz"/>
+                                <exclude reference="WVc-36-Bxk"/>
+                                <exclude reference="9fI-Pm-PXy"/>
+                                <exclude reference="DCI-7f-Lgo"/>
+                                <exclude reference="3hh-m6-uow"/>
+                                <exclude reference="gyG-if-7CA"/>
+                                <exclude reference="wVE-q7-fmf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -150,39 +162,44 @@
                                 <include reference="zQM-wm-bQQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3hh-m6-uow"/>
-                                <include reference="gyG-if-7CA"/>
-                                <include reference="wVE-q7-fmf"/>
-                                <include reference="KcD-O8-qYz"/>
-                                <include reference="WVc-36-Bxk"/>
-                                <include reference="8el-hc-msS"/>
-                                <include reference="kp1-xP-anc"/>
-                                <include reference="zrg-3A-kBd"/>
+                                <include reference="9EV-vG-O3F"/>
+                                <include reference="kgf-hG-U97"/>
                                 <include reference="RHw-dE-ucS"/>
                                 <include reference="gPj-i5-hq7"/>
                                 <include reference="obq-KM-Tv9"/>
                                 <include reference="yHx-mc-LsP"/>
-                                <include reference="9fI-Pm-PXy"/>
-                                <include reference="DCI-7f-Lgo"/>
                                 <include reference="FhD-tq-Nyn"/>
                                 <include reference="L66-Ke-YLc"/>
                                 <include reference="fRL-Kk-hnq"/>
                                 <include reference="gdv-JM-IDU"/>
                                 <include reference="Cx4-2g-d2c"/>
-                                <include reference="9EV-vG-O3F"/>
-                                <include reference="kgf-hG-U97"/>
+                                <include reference="8el-hc-msS"/>
+                                <include reference="kp1-xP-anc"/>
+                                <include reference="zrg-3A-kBd"/>
+                                <include reference="KcD-O8-qYz"/>
+                                <include reference="WVc-36-Bxk"/>
+                                <include reference="9fI-Pm-PXy"/>
+                                <include reference="DCI-7f-Lgo"/>
+                                <include reference="3hh-m6-uow"/>
+                                <include reference="gyG-if-7CA"/>
+                                <include reference="wVE-q7-fmf"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="passwordText" destination="oPi-6h-DBZ" id="aLz-ig-c9H"/>
+                        <outlet property="usernameTest" destination="Sre-n1-Bia" id="lB9-Yr-BiJ"/>
+                        <outlet property="usernameText" destination="Ti9-Cc-AEq" id="dnS-Ba-2Xh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAS-LQ-S9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162" y="415"/>
+            <point key="canvasLocation" x="-306" y="415"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Relp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -285,7 +302,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="4Kz-a0-KrA" kind="show" id="aG4-IH-LWK"/>
+                                    <segue destination="tx4-WU-cwD" kind="show" id="aTe-xD-ROj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -356,12 +373,12 @@
                                 <exclude reference="95f-hV-aqo"/>
                                 <exclude reference="PEn-Ob-i1r"/>
                                 <exclude reference="PPh-Kp-9Zv"/>
-                                <exclude reference="QOi-RS-CfP"/>
                                 <exclude reference="7wM-KR-uXx"/>
                                 <exclude reference="c6v-wq-6vo"/>
                                 <exclude reference="eYq-lJ-liX"/>
                                 <exclude reference="ixE-7W-q9P"/>
                                 <exclude reference="92H-rt-e52"/>
+                                <exclude reference="QOi-RS-CfP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -391,9 +408,6 @@
                                 <include reference="PPh-Kp-9Zv"/>
                                 <exclude reference="lbN-kA-jU0"/>
                                 <exclude reference="qyn-zb-Qmh"/>
-                                <exclude reference="Hc8-ml-njR"/>
-                                <exclude reference="Icr-s2-80v"/>
-                                <include reference="QOi-RS-CfP"/>
                                 <exclude reference="Dlv-0W-QSR"/>
                                 <exclude reference="OzK-Em-w7y"/>
                                 <exclude reference="1vR-hf-MfV"/>
@@ -403,13 +417,12 @@
                                 <include reference="eYq-lJ-liX"/>
                                 <include reference="ixE-7W-q9P"/>
                                 <include reference="92H-rt-e52"/>
+                                <exclude reference="Hc8-ml-njR"/>
+                                <exclude reference="Icr-s2-80v"/>
+                                <include reference="QOi-RS-CfP"/>
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="commentTextField" destination="iL9-3J-Q4G" id="NA1-nr-B78"/>
-                        <outlet property="descriptionLabel" destination="znr-Kb-cbx" id="1F9-EM-qNa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -610,7 +623,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5S5-sW-xQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="415"/>
+            <point key="canvasLocation" x="898.5" y="415"/>
         </scene>
     </scenes>
 </document>
