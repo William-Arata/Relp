@@ -8,10 +8,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Screen View Controller-->
         <scene sceneID="4IV-dL-gff">
             <objects>
-                <viewController id="tx4-WU-cwD" sceneMemberID="viewController">
+                <viewController id="tx4-WU-cwD" customClass="LoginScreenViewController" customModule="Relp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NT7-xg-Y73"/>
                         <viewControllerLayoutGuide type="bottom" id="zhO-tP-f96"/>
@@ -52,11 +52,17 @@
                                         <include reference="AEh-s6-r4G"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="usernameTextField:" destination="tx4-WU-cwD" eventType="editingChanged" id="bj9-6a-PpC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oPi-6h-DBZ">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordTextField:" destination="tx4-WU-cwD" eventType="editingChanged" id="GCG-NU-gX4"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cma-Ut-AZo">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -76,6 +82,10 @@
                                         <include reference="3Tm-Mc-SMo"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="loginButton:" destination="tx4-WU-cwD" eventType="touchUpInside" id="Sxb-pP-Zu5"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BWS-Tg-pCH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-wm-bQQ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -177,15 +187,20 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="passwordText" destination="oPi-6h-DBZ" id="aLz-ig-c9H"/>
+                        <outlet property="usernameTest" destination="Sre-n1-Bia" id="lB9-Yr-BiJ"/>
+                        <outlet property="usernameText" destination="Ti9-Cc-AEq" id="dnS-Ba-2Xh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAS-LQ-S9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162" y="415"/>
+            <point key="canvasLocation" x="-306" y="415"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Relp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -303,7 +318,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="4Kz-a0-KrA" kind="show" id="aG4-IH-LWK"/>
+                                    <segue destination="tx4-WU-cwD" kind="show" id="aTe-xD-ROj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -433,10 +448,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="commentTextField" destination="iL9-3J-Q4G" id="NA1-nr-B78"/>
-                        <outlet property="descriptionLabel" destination="znr-Kb-cbx" id="1F9-EM-qNa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -637,7 +648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5S5-sW-xQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="415"/>
+            <point key="canvasLocation" x="898.5" y="415"/>
         </scene>
     </scenes>
 </document>
