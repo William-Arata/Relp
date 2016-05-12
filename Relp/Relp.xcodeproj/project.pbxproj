@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24CD77971CE3CB9500BD87E2 /* CommentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD77961CE3CB9500BD87E2 /* CommentScreen.swift */; };
 		2C9ED32B1CD7D8BC009428C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9ED32A1CD7D8BC009428C9 /* AppDelegate.swift */; };
 		2C9ED32D1CD7D8BC009428C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9ED32C1CD7D8BC009428C9 /* ViewController.swift */; };
 		2C9ED3301CD7D8BC009428C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9ED32E1CD7D8BC009428C9 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24CD77961CE3CB9500BD87E2 /* CommentScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentScreen.swift; sourceTree = "<group>"; };
 		2C9ED3271CD7D8BC009428C9 /* Relp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9ED32A1CD7D8BC009428C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C9ED32C1CD7D8BC009428C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				2C9ED3331CD7D8BC009428C9 /* LaunchScreen.storyboard */,
 				2C9ED3361CD7D8BC009428C9 /* Info.plist */,
 				8D0237301CDBEA41007F281A /* LoginScreen.swift */,
+				24CD77961CE3CB9500BD87E2 /* CommentScreen.swift */,
 			);
 			path = Relp;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9ED32D1CD7D8BC009428C9 /* ViewController.swift in Sources */,
+				24CD77971CE3CB9500BD87E2 /* CommentScreen.swift in Sources */,
 				2C9ED32B1CD7D8BC009428C9 /* AppDelegate.swift in Sources */,
 				8D0237311CDBEA41007F281A /* LoginScreen.swift in Sources */,
 			);
