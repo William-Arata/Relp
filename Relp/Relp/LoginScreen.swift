@@ -12,6 +12,7 @@ import Foundation
 
 class LoginScreenViewController: UIViewController {
     
+    
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
@@ -30,7 +31,10 @@ class LoginScreenViewController: UIViewController {
    // Pseudo code
     @IBAction func loginButton(sender: AnyObject) {
         if usernameText.text == username && passwordText.text == password {
-            
+            self.performSegueWithIdentifier("segue", sender: nil)
+        }
+        else {
+            usernameTest.text = "HI"
         }
     }
             //Log in to next screen

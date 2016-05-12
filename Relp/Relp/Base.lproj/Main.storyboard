@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tx4-WU-cwD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -191,11 +191,12 @@
                         <outlet property="passwordText" destination="oPi-6h-DBZ" id="ZWA-EV-8TU"/>
                         <outlet property="usernameTest" destination="Sre-n1-Bia" id="lB9-Yr-BiJ"/>
                         <outlet property="usernameText" destination="Ti9-Cc-AEq" id="5O3-fu-mAj"/>
+                        <segue destination="4Kz-a0-KrA" kind="show" identifier="segue" id="9OO-df-lqI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAS-LQ-S9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-306" y="415"/>
+            <point key="canvasLocation" x="-441" y="409"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -950,10 +951,10 @@
             </objects>
             <point key="canvasLocation" x="1123.5" y="428"/>
         </scene>
-        <!--View Controller-->
+        <!--NextViewController-->
         <scene sceneID="zwy-aL-jNB">
             <objects>
-                <viewController id="4Kz-a0-KrA" sceneMemberID="viewController">
+                <viewController title="NextViewController" id="4Kz-a0-KrA" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4ca-zh-Lrb"/>
                         <viewControllerLayoutGuide type="bottom" id="I1w-sM-254"/>
@@ -1177,6 +1178,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="63E-Pe-p5f"/>
+        <segue reference="9OO-df-lqI"/>
     </inferredMetricsTieBreakers>
 </document>
