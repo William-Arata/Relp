@@ -15,6 +15,7 @@ class LoginScreenViewController: UIViewController {
     
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var displayIncorrectPassword: UILabel!
     
     @IBAction func usernameTextField(sender: AnyObject) {
     }
@@ -22,7 +23,7 @@ class LoginScreenViewController: UIViewController {
     @IBAction func passwordTextField(sender: AnyObject) {
     }
 
-    @IBOutlet weak var usernameTest: UILabel!
+ 
     
     let username = "Will"
     let password = "crusaders1"
@@ -31,10 +32,10 @@ class LoginScreenViewController: UIViewController {
    // Pseudo code
     @IBAction func loginButton(sender: AnyObject) {
         if usernameText.text == username && passwordText.text == password {
-            self.performSegueWithIdentifier("segue", sender: nil)
+            self.performSegueWithIdentifier("login", sender: nil)
         }
         else {
-            usernameTest.text = "HI"
+            displayIncorrectPassword.text = "Incorrect username or password"
         }
     }
             //Log in to next screen
