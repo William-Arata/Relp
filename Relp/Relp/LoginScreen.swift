@@ -22,8 +22,6 @@ class LoginScreenViewController: UIViewController {
     
     @IBAction func passwordTextField(sender: AnyObject) {
     }
-
- 
     
     let username = "Will"
     let password = "crusaders1"
