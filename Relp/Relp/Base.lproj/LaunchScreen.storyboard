@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rank.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PYv-9e-6MY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RelpLogo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PYv-9e-6MY">
                                 <rect key="frame" x="8" y="0.0" width="592" height="600"/>
                             </imageView>
                         </subviews>
@@ -43,6 +43,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="rank.jpg" width="2700" height="1800"/>
+        <image name="RelpLogo.jpg" width="2700" height="1800"/>
     </resources>
 </document>
