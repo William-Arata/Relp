@@ -12,6 +12,8 @@ import Foundation
 
 class LoginScreenViewController: UIViewController {
     
+    @IBOutlet weak var hiddenImage: UIImageView!
+    var hiddenImageCounter = 0
     
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
@@ -34,6 +36,10 @@ class LoginScreenViewController: UIViewController {
         }
         else {
             displayIncorrectPassword.text = "Incorrect username or password"
+            hiddenImageCounter += 1
+            if hiddenImageCounter == 5 {
+                hiddenImage.image = UIImage(named: "HiddenImageLoginScreen.jpg")
+            }
         }
     }
             //Log in to next screen
