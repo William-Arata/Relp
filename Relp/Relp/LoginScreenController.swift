@@ -42,8 +42,13 @@ class LoginScreenViewController: UIViewController {
             }
             if hiddenImageCounter == 10 {
                 hiddenImage.image = UIImage(named: "HackingPepe.jpg")
+            }
+            
+            if hiddenImageCounter == 15 {
+                hiddenImage.image = UIImage(named: "WrongUserOrPass.jpg")
                 hiddenImageCounter = 0
             }
+        
         }
     }
 
