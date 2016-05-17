@@ -12,6 +12,8 @@ import Foundation
 
 class LoginScreenViewController: UIViewController {
     
+    @IBOutlet weak var hiddenImage: UIImageView!
+    var hiddenImageCounter = 0
     
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
@@ -23,23 +25,26 @@ class LoginScreenViewController: UIViewController {
     @IBAction func passwordTextField(sender: AnyObject) {
     }
     
-    let username = "Will"
+    let username = ["Will", "Andrei", "Minh", "Kyle", "Jame"]
     let password = "crusaders1"
     @IBOutlet weak var loginButtonText: UIButton!
     
    // Pseudo code
     @IBAction func loginButton(sender: AnyObject) {
-        if usernameText.text == username && passwordText.text == password {
+        if username.contains(usernameText.text!) && passwordText.text == password {
             self.performSegueWithIdentifier("login", sender: nil)
         }
         else {
             displayIncorrectPassword.text = "Incorrect username or password"
+            hiddenImageCounter += 1
+            if hiddenImageCounter == 5 {
+                hiddenImage.image = UIImage(named: "ICantDoItImage.jpg")
+            }
+            if hiddenImageCounter == 10 {
+                hiddenImage.image = UIImage(named: "HackingPepe.jpg")
+                hiddenImageCounter = 0
+            }
         }
     }
-            //Log in to next screen
- //   }
-   // else if {
-     //   wrongPasswordLabel == "Wrong username and/or password. Get outta here."
-   // }
 
 }

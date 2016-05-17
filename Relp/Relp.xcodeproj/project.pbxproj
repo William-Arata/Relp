@@ -20,6 +20,8 @@
 		8D3CEB471CE67A7B0033F5B4 /* Curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CEB441CE67A7B0033F5B4 /* Curry.jpg */; };
 		8D3CEB481CE67A7B0033F5B4 /* Noodles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CEB451CE67A7B0033F5B4 /* Noodles.jpg */; };
 		8D3CEB4A1CE67A870033F5B4 /* RelpLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CEB491CE67A870033F5B4 /* RelpLogo.jpg */; };
+		8D957AFE1CEA4602009CF659 /* HackingPepe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D957AFD1CEA4602009CF659 /* HackingPepe.jpg */; };
+		8D957B041CEA5593009CF659 /* ICantDoItImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D957B031CEA5592009CF659 /* ICantDoItImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		8D3CEB441CE67A7B0033F5B4 /* Curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Curry.jpg; sourceTree = "<group>"; };
 		8D3CEB451CE67A7B0033F5B4 /* Noodles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Noodles.jpg; sourceTree = "<group>"; };
 		8D3CEB491CE67A870033F5B4 /* RelpLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RelpLogo.jpg; sourceTree = "<group>"; };
+		8D957AFD1CEA4602009CF659 /* HackingPepe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HackingPepe.jpg; sourceTree = "<group>"; };
+		8D957B031CEA5592009CF659 /* ICantDoItImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ICantDoItImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				8D3CEB431CE67A7B0033F5B4 /* Pasta.jpg */,
+				8D957AFD1CEA4602009CF659 /* HackingPepe.jpg */,
+				8D957B031CEA5592009CF659 /* ICantDoItImage.jpg */,
 				8D3CEB441CE67A7B0033F5B4 /* Curry.jpg */,
 				8D3CEB491CE67A870033F5B4 /* RelpLogo.jpg */,
 				8D3CEB451CE67A7B0033F5B4 /* Noodles.jpg */,
@@ -255,7 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D957B041CEA5593009CF659 /* ICantDoItImage.jpg in Resources */,
 				8D3CEB4A1CE67A870033F5B4 /* RelpLogo.jpg in Resources */,
+				8D957AFE1CEA4602009CF659 /* HackingPepe.jpg in Resources */,
 				8D3CEB471CE67A7B0033F5B4 /* Curry.jpg in Resources */,
 				2C9ED3351CD7D8BC009428C9 /* LaunchScreen.storyboard in Resources */,
 				8D3CEB461CE67A7B0033F5B4 /* Pasta.jpg in Resources */,

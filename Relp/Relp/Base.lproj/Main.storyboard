@@ -207,6 +207,7 @@
                     </view>
                     <connections>
                         <outlet property="displayIncorrectPassword" destination="cpj-5Z-Muv" id="ek1-4D-cOW"/>
+                        <outlet property="hiddenImage" destination="x8V-x0-yHK" id="0ku-On-mQO"/>
                         <outlet property="loginButtonText" destination="cma-Ut-AZo" id="oh5-qo-58C"/>
                         <outlet property="passwordText" destination="oPi-6h-DBZ" id="aLz-ig-c9H"/>
                         <outlet property="usernameText" destination="Ti9-Cc-AEq" id="5O3-fu-mAj"/>
