@@ -562,12 +562,15 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUw-rU-JPh">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-De-Ayx">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <connections>
+                                    <action selector="imageButton1:" destination="4Kz-a0-KrA" eventType="editingChanged" id="VUb-tC-i5R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65z-gV-rJ1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <connections>
+                                    <action selector="imageButton3:" destination="4Kz-a0-KrA" eventType="editingChanged" id="46g-nD-GSP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvJ-jX-p5c">
                                 <rect key="frame" x="304" y="329" width="276" height="64"/>
@@ -588,6 +591,12 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-De-Ayx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <connections>
+                                    <action selector="imageButton2:" destination="4Kz-a0-KrA" eventType="editingChanged" id="yo0-Mb-Ocx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.95850268945584716" blue="0.15668089562156629" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -637,22 +646,26 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pUw-rU-JPh"/>
-                                <exclude reference="POH-De-Ayx"/>
                                 <exclude reference="65z-gV-rJ1"/>
+                                <exclude reference="POH-De-Ayx"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="0tg-5J-ij4"/>
-                                <exclude reference="6Ew-J5-9Rr"/>
-                                <exclude reference="Xhi-RD-d5g"/>
-                                <exclude reference="uic-Kc-Mjk"/>
+                                <exclude reference="8iF-xM-6iM"/>
+                                <exclude reference="auV-tZ-ZWt"/>
+                                <exclude reference="gcU-VT-zgO"/>
+                                <exclude reference="kX3-ao-7Qe"/>
+                                <exclude reference="Fhi-lm-lot"/>
+                                <exclude reference="cqJ-4o-Af9"/>
+                                <exclude reference="dBk-bu-wQF"/>
                                 <exclude reference="5yS-QY-K2b"/>
                                 <exclude reference="E29-4b-Qwx"/>
                                 <exclude reference="Fip-hE-DdG"/>
                                 <exclude reference="cpu-n5-Gji"/>
                                 <exclude reference="fq1-6t-4wp"/>
-                                <exclude reference="Fhi-lm-lot"/>
-                                <exclude reference="cqJ-4o-Af9"/>
-                                <exclude reference="dBk-bu-wQF"/>
+                                <exclude reference="uic-Kc-Mjk"/>
+                                <exclude reference="0tg-5J-ij4"/>
+                                <exclude reference="6Ew-J5-9Rr"/>
+                                <exclude reference="Xhi-RD-d5g"/>
                                 <exclude reference="e5k-Wa-jAy"/>
                                 <exclude reference="066-48-Z1a"/>
                                 <exclude reference="12v-Tr-RBr"/>
@@ -663,10 +676,6 @@
                                 <exclude reference="cx8-t0-2aw"/>
                                 <exclude reference="qRw-FC-WjA"/>
                                 <exclude reference="yhC-Iu-otg"/>
-                                <exclude reference="8iF-xM-6iM"/>
-                                <exclude reference="auV-tZ-ZWt"/>
-                                <exclude reference="gcU-VT-zgO"/>
-                                <exclude reference="kX3-ao-7Qe"/>
                                 <exclude reference="A96-tF-PP7"/>
                                 <exclude reference="iWf-db-ERr"/>
                                 <exclude reference="npL-hq-dFS"/>
@@ -682,22 +691,26 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pUw-rU-JPh"/>
-                                <include reference="POH-De-Ayx"/>
                                 <include reference="65z-gV-rJ1"/>
+                                <include reference="POH-De-Ayx"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="0tg-5J-ij4"/>
-                                <include reference="6Ew-J5-9Rr"/>
-                                <include reference="Xhi-RD-d5g"/>
-                                <include reference="uic-Kc-Mjk"/>
+                                <include reference="8iF-xM-6iM"/>
+                                <include reference="auV-tZ-ZWt"/>
+                                <include reference="gcU-VT-zgO"/>
+                                <include reference="kX3-ao-7Qe"/>
+                                <include reference="Fhi-lm-lot"/>
+                                <include reference="cqJ-4o-Af9"/>
+                                <include reference="dBk-bu-wQF"/>
                                 <include reference="5yS-QY-K2b"/>
                                 <include reference="E29-4b-Qwx"/>
                                 <include reference="Fip-hE-DdG"/>
                                 <include reference="cpu-n5-Gji"/>
                                 <include reference="fq1-6t-4wp"/>
-                                <include reference="Fhi-lm-lot"/>
-                                <include reference="cqJ-4o-Af9"/>
-                                <include reference="dBk-bu-wQF"/>
+                                <include reference="uic-Kc-Mjk"/>
+                                <include reference="0tg-5J-ij4"/>
+                                <include reference="6Ew-J5-9Rr"/>
+                                <include reference="Xhi-RD-d5g"/>
                                 <include reference="e5k-Wa-jAy"/>
                                 <include reference="066-48-Z1a"/>
                                 <include reference="12v-Tr-RBr"/>
@@ -708,10 +721,6 @@
                                 <include reference="cx8-t0-2aw"/>
                                 <include reference="qRw-FC-WjA"/>
                                 <include reference="yhC-Iu-otg"/>
-                                <include reference="8iF-xM-6iM"/>
-                                <include reference="auV-tZ-ZWt"/>
-                                <include reference="gcU-VT-zgO"/>
-                                <include reference="kX3-ao-7Qe"/>
                                 <include reference="A96-tF-PP7"/>
                                 <include reference="iWf-db-ERr"/>
                                 <include reference="npL-hq-dFS"/>
@@ -726,6 +735,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel1" destination="jUW-uF-dGo" id="b9w-Mc-N8x"/>
+                        <outlet property="descriptionLabel2" destination="ZvJ-jX-p5c" id="Beh-Sa-B8e"/>
+                        <outlet property="descriptionLabel3" destination="beP-n1-gWj" id="8RA-rM-ewq"/>
                         <segue destination="tHH-XQ-UvC" kind="show" identifier="segue" id="HJt-eV-2Pg"/>
                     </connections>
                 </viewController>
@@ -740,6 +752,6 @@
         <image name="Pasta.jpg" width="275" height="183"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9OO-df-lqI"/>
+        <segue reference="sQd-y6-CMX"/>
     </inferredMetricsTieBreakers>
 </document>
