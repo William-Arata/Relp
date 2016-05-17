@@ -15,9 +15,12 @@ class CommentScreenViewController: UIViewController, MFMailComposeViewController
     @IBOutlet weak var commentTextField: UITextField!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+   
+    
     private var good: Int! = 0
     var bad: Int! = 0
     var login = LoginScreenViewController()
+    var data: Data?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,7 @@ class CommentScreenViewController: UIViewController, MFMailComposeViewController
         //meh
         //meh
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -67,6 +71,17 @@ class CommentScreenViewController: UIViewController, MFMailComposeViewController
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func descriptionChange() {
+        var num: Int
+        if let num = data?.click1 {
+            descriptionLabel.text = data?.description1
+        }else if let num = data?.click2{
+            descriptionLabel.text = data?.description2
+        }else if let num = data?.click3{
+            descriptionLabel.text = data?.description3
+        }
     }
 }
 

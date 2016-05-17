@@ -563,12 +563,15 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUw-rU-JPh">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-De-Ayx">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <connections>
+                                    <action selector="imageButton1:" destination="4Kz-a0-KrA" eventType="editingChanged" id="VUb-tC-i5R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65z-gV-rJ1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <connections>
+                                    <action selector="imageButton3:" destination="4Kz-a0-KrA" eventType="editingChanged" id="46g-nD-GSP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvJ-jX-p5c">
                                 <rect key="frame" x="304" y="329" width="276" height="64"/>
@@ -589,6 +592,12 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-De-Ayx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <connections>
+                                    <action selector="imageButton2:" destination="4Kz-a0-KrA" eventType="editingChanged" id="yo0-Mb-Ocx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.95850268945584716" blue="0.15668089562156629" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -638,8 +647,8 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pUw-rU-JPh"/>
-                                <exclude reference="POH-De-Ayx"/>
                                 <exclude reference="65z-gV-rJ1"/>
+                                <exclude reference="POH-De-Ayx"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="8iF-xM-6iM"/>
@@ -683,8 +692,8 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pUw-rU-JPh"/>
-                                <include reference="POH-De-Ayx"/>
                                 <include reference="65z-gV-rJ1"/>
+                                <include reference="POH-De-Ayx"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="8iF-xM-6iM"/>
@@ -727,6 +736,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel1" destination="jUW-uF-dGo" id="b9w-Mc-N8x"/>
+                        <outlet property="descriptionLabel2" destination="ZvJ-jX-p5c" id="Beh-Sa-B8e"/>
+                        <outlet property="descriptionLabel3" destination="beP-n1-gWj" id="8RA-rM-ewq"/>
                         <segue destination="tHH-XQ-UvC" kind="show" identifier="segue" id="HJt-eV-2Pg"/>
                     </connections>
                 </viewController>
@@ -741,6 +753,6 @@
         <image name="Pasta.jpg" width="275" height="183"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9OO-df-lqI"/>
+        <segue reference="sQd-y6-CMX"/>
     </inferredMetricsTieBreakers>
 </document>
