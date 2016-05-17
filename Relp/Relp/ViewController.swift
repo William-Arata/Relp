@@ -47,14 +47,17 @@ class ViewController: UIViewController {
     }
     @IBAction func imageButton1(sender: AnyObject) {
         let click = 1
+        self.performSegueWithIdentifier("segue", sender: nil)
         
     }
     @IBAction func imageButton2(sender: AnyObject) {
         let click = 2
+        self.performSegueWithIdentifier("segue", sender: nil)
         
     }
     @IBAction func imageButton3(sender: AnyObject) {
         let click = 3
+        self.performSegueWithIdentifier("segue", sender: nil)
         
     }
-    }
+}

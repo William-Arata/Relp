@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24CD77971CE3CB9500BD87E2 /* CommentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD77961CE3CB9500BD87E2 /* CommentScreen.swift */; };
+		24CD77971CE3CB9500BD87E2 /* CommentScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD77961CE3CB9500BD87E2 /* CommentScreenController.swift */; };
 		2C9ED32B1CD7D8BC009428C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9ED32A1CD7D8BC009428C9 /* AppDelegate.swift */; };
 		2C9ED32D1CD7D8BC009428C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9ED32C1CD7D8BC009428C9 /* ViewController.swift */; };
 		2C9ED3301CD7D8BC009428C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9ED32E1CD7D8BC009428C9 /* Main.storyboard */; };
@@ -15,13 +15,14 @@
 		2C9ED3351CD7D8BC009428C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9ED3331CD7D8BC009428C9 /* LaunchScreen.storyboard */; };
 		2C9ED3401CD7D8BC009428C9 /* RelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9ED33F1CD7D8BC009428C9 /* RelpTests.swift */; };
 		2C9ED34B1CD7D8BC009428C9 /* RelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9ED34A1CD7D8BC009428C9 /* RelpUITests.swift */; };
-		8D0237311CDBEA41007F281A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0237301CDBEA41007F281A /* LoginScreen.swift */; };
+		8D0237311CDBEA41007F281A /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0237301CDBEA41007F281A /* LoginScreenController.swift */; };
 		8D3CEB461CE67A7B0033F5B4 /* Pasta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CEB431CE67A7B0033F5B4 /* Pasta.jpg */; };
 		8D3CEB471CE67A7B0033F5B4 /* Curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CEB441CE67A7B0033F5B4 /* Curry.jpg */; };
 		8D3CEB481CE67A7B0033F5B4 /* Noodles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CEB451CE67A7B0033F5B4 /* Noodles.jpg */; };
 		8D3CEB4A1CE67A870033F5B4 /* RelpLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CEB491CE67A870033F5B4 /* RelpLogo.jpg */; };
 		8D957AFE1CEA4602009CF659 /* HackingPepe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D957AFD1CEA4602009CF659 /* HackingPepe.jpg */; };
 		8D957B041CEA5593009CF659 /* ICantDoItImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D957B031CEA5592009CF659 /* ICantDoItImage.jpg */; };
+		8DE93D971CEBC40200F119E4 /* RelpLogoTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DE93D961CEBC40200F119E4 /* RelpLogoTransparent.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24CD77961CE3CB9500BD87E2 /* CommentScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentScreen.swift; sourceTree = "<group>"; };
+		24CD77961CE3CB9500BD87E2 /* CommentScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentScreenController.swift; sourceTree = "<group>"; };
 		2C9ED3271CD7D8BC009428C9 /* Relp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9ED32A1CD7D8BC009428C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C9ED32C1CD7D8BC009428C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,13 +57,14 @@
 		2C9ED3461CD7D8BC009428C9 /* RelpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9ED34A1CD7D8BC009428C9 /* RelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelpUITests.swift; sourceTree = "<group>"; };
 		2C9ED34C1CD7D8BC009428C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D0237301CDBEA41007F281A /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		8D0237301CDBEA41007F281A /* LoginScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		8D3CEB431CE67A7B0033F5B4 /* Pasta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pasta.jpg; sourceTree = "<group>"; };
 		8D3CEB441CE67A7B0033F5B4 /* Curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Curry.jpg; sourceTree = "<group>"; };
 		8D3CEB451CE67A7B0033F5B4 /* Noodles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Noodles.jpg; sourceTree = "<group>"; };
 		8D3CEB491CE67A870033F5B4 /* RelpLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RelpLogo.jpg; sourceTree = "<group>"; };
 		8D957AFD1CEA4602009CF659 /* HackingPepe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HackingPepe.jpg; sourceTree = "<group>"; };
 		8D957B031CEA5592009CF659 /* ICantDoItImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ICantDoItImage.jpg; sourceTree = "<group>"; };
+		8DE93D961CEBC40200F119E4 /* RelpLogoTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RelpLogoTransparent.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +122,8 @@
 				2C9ED32E1CD7D8BC009428C9 /* Main.storyboard */,
 				2C9ED3331CD7D8BC009428C9 /* LaunchScreen.storyboard */,
 				2C9ED3361CD7D8BC009428C9 /* Info.plist */,
-				8D0237301CDBEA41007F281A /* LoginScreen.swift */,
-				24CD77961CE3CB9500BD87E2 /* CommentScreen.swift */,
+				8D0237301CDBEA41007F281A /* LoginScreenController.swift */,
+				24CD77961CE3CB9500BD87E2 /* CommentScreenController.swift */,
 			);
 			path = Relp;
 			sourceTree = "<group>";
@@ -152,6 +154,7 @@
 				8D957B031CEA5592009CF659 /* ICantDoItImage.jpg */,
 				8D3CEB441CE67A7B0033F5B4 /* Curry.jpg */,
 				8D3CEB491CE67A870033F5B4 /* RelpLogo.jpg */,
+				8DE93D961CEBC40200F119E4 /* RelpLogoTransparent.png */,
 				8D3CEB451CE67A7B0033F5B4 /* Noodles.jpg */,
 			);
 			name = images;
@@ -269,6 +272,7 @@
 				8D3CEB461CE67A7B0033F5B4 /* Pasta.jpg in Resources */,
 				2C9ED3321CD7D8BC009428C9 /* Assets.xcassets in Resources */,
 				8D3CEB481CE67A7B0033F5B4 /* Noodles.jpg in Resources */,
+				8DE93D971CEBC40200F119E4 /* RelpLogoTransparent.png in Resources */,
 				2C9ED3301CD7D8BC009428C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,9 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9ED32D1CD7D8BC009428C9 /* ViewController.swift in Sources */,
-				24CD77971CE3CB9500BD87E2 /* CommentScreen.swift in Sources */,
+				24CD77971CE3CB9500BD87E2 /* CommentScreenController.swift in Sources */,
 				2C9ED32B1CD7D8BC009428C9 /* AppDelegate.swift in Sources */,
-				8D0237311CDBEA41007F281A /* LoginScreen.swift in Sources */,
+				8D0237311CDBEA41007F281A /* LoginScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
