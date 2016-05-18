@@ -19,6 +19,7 @@ struct Data {
     var description1: String = "\(controller.descriptionLabel1)"
     var description2: String = "\(controller.descriptionLabel2)"
     var description3: String = "\(controller.descriptionLabel3)"
+    var testName = "test"
 }
 
 class ViewController: UIViewController {
@@ -40,16 +41,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let data = Data()
+        var data = Data()
+        
         if let destinationViewController = segue.destinationViewController as? CommentScreenViewController {
+            
+            data.description1 = "Whatever you need it to be."
             destinationViewController.data = data
         }
     }
     @IBAction func imageButton1(sender: AnyObject) {
-        let click = 1
         self.performSegueWithIdentifier("segue", sender: nil)
-        
     }
+    
     @IBAction func imageButton2(sender: AnyObject) {
         let click = 2
         self.performSegueWithIdentifier("segue", sender: nil)
