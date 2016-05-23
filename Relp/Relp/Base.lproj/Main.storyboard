@@ -564,13 +564,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUw-rU-JPh">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <connections>
-                                    <action selector="imageButton1:" destination="4Kz-a0-KrA" eventType="editingChanged" id="VUb-tC-i5R"/>
-                                    <action selector="imageButton1:" destination="4Kz-a0-KrA" eventType="touchUpInside" id="eOL-06-sud"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65z-gV-rJ1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <connections>
@@ -624,6 +617,13 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUw-rU-JPh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <connections>
+                                    <action selector="imageButton1:" destination="4Kz-a0-KrA" eventType="editingChanged" id="VUb-tC-i5R"/>
+                                    <action selector="imageButton1:" destination="4Kz-a0-KrA" eventType="touchUpInside" id="eOL-06-sud"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82077650107670197" blue="0.14057284119347468" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -666,10 +666,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="pUw-rU-JPh"/>
                                 <exclude reference="65z-gV-rJ1"/>
                                 <exclude reference="POH-De-Ayx"/>
                                 <exclude reference="wbP-In-kng"/>
+                                <exclude reference="pUw-rU-JPh"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="C2I-2j-cNR"/>
@@ -712,10 +712,10 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="pUw-rU-JPh"/>
                                 <include reference="65z-gV-rJ1"/>
                                 <include reference="POH-De-Ayx"/>
                                 <include reference="wbP-In-kng"/>
+                                <include reference="pUw-rU-JPh"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="C2I-2j-cNR"/>

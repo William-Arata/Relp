@@ -45,21 +45,21 @@ class ViewController: UIViewController {
         
         if let destinationViewController = segue.destinationViewController as? CommentScreenViewController {
             
-            data.description1 = "Whatever you need it to be."
             destinationViewController.data = data
         }
     }
     @IBAction func imageButton1(sender: AnyObject) {
+        let num = 1
         self.performSegueWithIdentifier("segue", sender: nil)
     }
     
     @IBAction func imageButton2(sender: AnyObject) {
-        let click = 2
+        let num = 2
         self.performSegueWithIdentifier("segue", sender: nil)
         
     }
     @IBAction func imageButton3(sender: AnyObject) {
-        let click = 3
+        let num = 3
         self.performSegueWithIdentifier("segue", sender: nil)
         
     }
