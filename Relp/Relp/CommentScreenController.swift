@@ -22,13 +22,11 @@ class CommentScreenViewController: UIViewController, MFMailComposeViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        descriptionLabel.text = data?.description1
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        changeDescriptionLabel()
         }
     
     @IBAction func badButton(sender: AnyObject) {
@@ -68,15 +66,6 @@ class CommentScreenViewController: UIViewController, MFMailComposeViewController
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func changeDescriptionLabel() {
-        if ((data?.click1) != nil){
-            descriptionLabel.text = data?.description1
-        }else if ((data?.click2) != nil){
-            descriptionLabel.text = data?.description2
-        }else if ((data?.click3) != nil){
-            descriptionLabel.text = data?.description3
-        }
-    }
 }
 
 

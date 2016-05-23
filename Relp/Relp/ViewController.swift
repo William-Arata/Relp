@@ -40,14 +40,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var data = Data()
-        
-        if let destinationViewController = segue.destinationViewController as? CommentScreenViewController {
-            
-            destinationViewController.data = data
-        }
-    }
+
     @IBAction func imageButton1(sender: AnyObject) {
         let num = 1
         self.performSegueWithIdentifier("segue", sender: nil)
